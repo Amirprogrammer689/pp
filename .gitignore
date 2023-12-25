@@ -1,2 +1,5 @@
 .venv/
 __pycache__/
+dataset/
+dataset_random/
+dataset_copy/

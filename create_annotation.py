@@ -23,7 +23,6 @@ def create_annotation(path_data: str, path_to_annotation: str) -> None:
 
     for dirpath, dirnames, filenames in os.walk(path_data):
         for index, file in enumerate(filenames):
-            file_number = str(index).zfill(4)  # Добавляем ведущие нули
             full_path = os.path.abspath(os.path.join(dirpath, file))
             relative_path = os.path.relpath(full_path, path_data)
             class_name = os.path.basename(dirpath)
